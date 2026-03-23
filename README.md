@@ -39,6 +39,16 @@ The pipeline collects the following fields:
 - requests
 - SQL
 - matplotlib
+- 
+## How it works
+1. The pipeline sends a request to the CoinGecko API
+2. The response is loaded into a pandas DataFrame
+3. Relevant columns are selected and renamed
+4. Coin symbols are normalized to uppercase
+5. The current date is added as a snapshot date
+6. A daily CSV file is saved
+7. The same data is appended to a SQLite table for historical storage
+
 
 ## Project structure
 
@@ -57,3 +67,5 @@ crypto-data-pipeline/
 │
 ├── requirements.txt
 └── README.md
+
+
