@@ -24,7 +24,7 @@ My main goal was to understand how pipelines work and how work of data engineer 
 - requests
 - SQL
 - matplotlib
-- 
+  
 ## How it works
 1. The pipeline sends a request to the CoinGecko API
 2. The response is loaded into a pandas DataFrame
