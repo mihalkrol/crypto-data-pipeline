@@ -17,21 +17,6 @@ My main goal was to understand how pipelines work and how work of data engineer 
 - Supports SQL-based analysis in a notebook
 - Includes matplotlib visualizations for selected coins
 
-## Data collected
-
-The pipeline collects the following fields:
-
-- name
-- symbol
-- current_price
-- market_cap
-- market_cap_rank
-- total_volume
-- price_change_24h
-- price_change_7d
-- price_change_30d
-- date
-
 ## Tech stack
 
 - Python
@@ -48,6 +33,18 @@ The pipeline collects the following fields:
 5. The current date is added as a snapshot date
 6. A daily CSV file is saved
 7. The same data is appended to a SQLite table for historical storage
+8. The data is then used for analysis and visualization in a separate notebook
+
+## Analysis and visualization
+
+The notebook:
+
+- queries the SQLite database using SQL
+- analyzes historical price data
+- selects a subset of cryptocurrencies
+- visualizes price trends over time using matplotlib
+
+This demonstrates how the collected data can be used for downstream analysis and supports an end-to-end workflow from data ingestion to insights.
 
 
 ## Project structure
