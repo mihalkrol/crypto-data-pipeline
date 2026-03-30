@@ -6,7 +6,7 @@ This project is a batch data pipeline that fetches cryptocurrency market data fr
 
 The project evolved from a simple data extraction script into a more production-style data pipeline using Apache Airflow. It now includes multiple stages of data processing, data quality handling, and clear separation between raw and cleaned data layers.
 
-The main goal of this project is to demonstrate practical data engineering concepts such as orchestration, data modeling, idempotency, and pipeline structuring.
+The main goal of this project is to demonstrate practical data engineering concepts such as orchestration, data modeling, and pipeline structuring.
 
 ---
 
